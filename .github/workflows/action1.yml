@@ -1,0 +1,15 @@
+name: MyFirst github action code
+on:
+    push:
+        branches: [main]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
+
+            - name: Step one
+              run: echo 'first step in cofiguring githubAction'
